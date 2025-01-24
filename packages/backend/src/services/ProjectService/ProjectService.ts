@@ -463,7 +463,7 @@ export class ProjectService extends BaseService {
         };
     }
 
-    private async _getWarehouseClient(
+    async _getWarehouseClient(
         projectUuid: string,
         credentials: CreateWarehouseCredentials,
         snowflakeVirtualWarehouse?: string,
@@ -1810,7 +1810,7 @@ export class ProjectService extends BaseService {
         );
     }
 
-    private async getResultsFromCacheOrWarehouse({
+    async getResultsFromCacheOrWarehouse({
         projectUuid,
         context,
         warehouseClient,
